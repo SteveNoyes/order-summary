@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://pages.github.com/)
+- Solution URL: [https://github.com/SteveNoyes/order-summary](https://github.com/SteveNoyes/order-summary)
+- Live Site URL: [GitHub Pages](https://stevenoyes.github.io/order-summary/)
 
 ## My process
 

@@ -17,17 +17,21 @@
   --desaturated-blue: hsl(224, 23%, 55%);
   /* Change link text color */
   --dark-blue: hsl(223, 47%, 23%);
+
+  /* Button Color */
+  --from-jpg: #756cf0;
 }
 
 /* 
 - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
 - Weights: 500, 700, 900 
 */
+
 body {
   font-size: 16px;
   font-family: 'Red Hat Display', sans-serif, monospace;
   background-image: url(../images/pattern-background-mobile.svg);
-  background-color: var(--very-pale-blue); 
+  background-color: var(--pale-blue); 
   width: 100%;
   height: 100vh;
   background-position: start; 
@@ -50,12 +54,21 @@ p {
 
 .wrapper {
   width: 80%;
+  max-width: 500px;
   margin: auto;
   text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
 .wrapper img {
   border-radius: 20px 20px 0 0;
+}
+
+.cardInfo {
+  width: 80%;
+  margin: auto;
 }
 
 .cardInfo h1 {
@@ -63,16 +76,53 @@ p {
 }
 
 .cardInfo p {
-  width: 80%;
+  width: 92%;
   margin: auto;
   line-height: 1.6rem;
   padding-bottom: 2rem;
 }
 
 .annPlan {
-  border: 1px solid red;
   display: inline-flex;
   align-items: center;
+  width: 90%;
+  padding: .8rem;
+  border-radius: 17px;
+  margin-bottom: 2rem;
+  background-color: var(--very-pale-blue);
+}
+
+.annPlan img {
+  margin-right: 1rem;
+}
+
+.annInfo {
+  margin-right: .7rem;
+}
+
+@media (min-width: 425px) {
+  .annInfo {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width: 487px) {
+  .annInfo {
+    margin-right: 4rem;
+  }
+}
+
+.annInfo h2 {
+  margin-left: .5rem;
+}
+
+.annInfo p {
+  padding-bottom: 0;
+}
+
+.changeOrder:hover {
+  text-decoration: none;
+  color: var(--from-jpg);
 }
 
 button {
@@ -80,4 +130,39 @@ button {
   margin: auto;
   justify-content: center;
   align-items: center;
+  width: 98%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: var(--bright-blue);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 15px 15px var(--pale-blue);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--from-jpg);
+}
+
+.cancelOrder {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+
+.cancelOrder:hover {
+  color: var(--dark-blue);
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
 }
